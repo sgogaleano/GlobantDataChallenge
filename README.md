@@ -5,7 +5,7 @@
 1. Clone the repository:
     ```bash
     git clone <repository_url>
-    cd globantTest
+    cd GlobantDataChallenge
     ```
 
 2. Run the setup script:
