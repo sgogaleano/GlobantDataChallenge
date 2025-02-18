@@ -1,5 +1,3 @@
-# Globant Test Project
-
 ## Setup Instructions
 
 1. Clone the repository:
@@ -14,14 +12,24 @@
     ./00_setup_environment.sh
     ```
 
-3. Place your CSV files in the `Data` directory.
+3. Place your CSV files in the [Data](http://_vscodecontentref_/0) directory.
 
 4. Load the CSV data into the database:
     ```bash
     python3 01_loadCSVtoDB.py
     ```
 
-5. Run the FastAPI server:
+5. Build the Docker image:
+    ```bash
+    docker build -t globantdatachallenge .
+    ```
+
+6. Run the Docker container:
+    ```bash
+    docker run -p 8000:8000 globantdatachallenge
+    ```
+
+7. Run the FastAPI server (if not using Docker):
     ```bash
     uvicorn 02_apiRest:app --reload
     ```
@@ -30,7 +38,8 @@
 
 - Python 3
 - PostgreSQL
-- Required Python packages (listed in `requirements.txt`)
+- Docker (optional, if you want to use Docker)
+- Required Python packages (listed in [requirements.txt](http://_vscodecontentref_/1))
 
 ## API Endpoints
 
@@ -56,9 +65,9 @@
 ## Backup and Restore
 
 ### Backup Tables
-- **Script:** `03_avroBackup.py`
-- **Description:** Backs up all tables to Avro files in the `backups` directory.
+- **Script:** [03_avroBackup.py](http://_vscodecontentref_/2)
+- **Description:** Backs up all tables to Avro files in the [backups](http://_vscodecontentref_/3) directory.
 
 ### Restore Tables
-- **Script:** `04_restoreTableFromBackup.py`
+- **Script:** [04_restoreTableFromBackup.py](http://_vscodecontentref_/4)
 - **Description:** Restores a table from an Avro backup file.
