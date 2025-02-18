@@ -5,7 +5,7 @@ sudo apt-get update
 sudo apt-get install -y python3 python3-pip postgresql postgresql-contrib
 
 # Install required Python packages
-pip3 install -r ../requirements.txt
+pip3 install -r requirements.txt
 
 # Start PostgreSQL service
 sudo service postgresql start
