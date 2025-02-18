@@ -4,14 +4,14 @@
 
 1. Clone the repository:
     ```bash
-    git clone <repository_url>
+    git clone https://github.com/sgogaleano/GlobantDataChallenge.git
     cd GlobantDataChallenge
     ```
 
 2. Run the setup script:
     ```bash
-    chmod +x scripts/setup_environment.sh
-    ./scripts/setup_environment.sh
+    chmod +x 00_setup_environment.sh
+    ./00_setup_environment.sh
     ```
 
 3. Place your CSV files in the [Data](http://_vscodecontentref_/0) directory.
