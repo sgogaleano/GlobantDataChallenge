@@ -4,7 +4,7 @@ from pydantic import BaseModel, Field
 from typing import List
 import logging
 from datetime import datetime
-from creatingTables import Department, Job, HiredEmployee  # Import your ORM models
+from creatingTables import Department, Job, HiredEmployee, SessionLocal  # Import your ORM models
 
 app = FastAPI()
 logging.basicConfig(filename="errors.log", level=logging.ERROR)

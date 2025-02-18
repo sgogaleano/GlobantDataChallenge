@@ -62,7 +62,8 @@ def load_csv_to_db():
                     raise ValueError("NaT (Not a Time)")
             except ValueError:
                 print(f"Invalid datetime format: {datetime_str}")
-                datetime_obj = None  # Set to None for invalid datetime formats
+                continue
+                #datetime_obj = None  # Set to None for invalid datetime formats
             
             # Handle NaN values in job_id
             job_id = row["job_id"]
