@@ -1,0 +1,28 @@
+# Python
+*.pyc
+__pycache__/
+
+# Environment
+.env
+venv/
+env/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# Docker
+*.log
+docker-compose.override.yml
+
+# Backup files
+backups/
+
+# Data files
+Data/
+
+# OS generated files
+.DS_Store
+Thumbs.db
